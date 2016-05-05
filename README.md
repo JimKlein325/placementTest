@@ -8,7 +8,7 @@
 
 Ping Pong is a sample application for demonstrating basic proficiency in Javascript and related technologies.
 
-A user enters and number and is shown a range of numbers from 1 to the number entered with these subsitutions:
+A user enters a number and is shown a range of numbers from 1 to the number entered with these subsitutions:
 * Numbers divisible by 3 are replaced by 'ping'
 * Numbers divisible by 5 are replaced by 'pong'
 * Numbers divisible by both 3 and 5 are replaced by 'pingpong'
