@@ -1,0 +1,33 @@
+/* Layout
+==================== */
+
+body {
+    padding-top: 110px;
+}
+
+.navbar {
+  background-color: #F5DA81;
+}
+.btn {
+  background-color: #bababa;
+}
+
+.aboutColumn {
+  background-color: #7EB58C;
+  height: 1000px;
+}
+.aboutText {
+  color: white;
+}
+.contentArea {
+  padding-top: 30px;
+  padding-left: 0px;
+  background-color: #ededed;
+}
+.pageTitle{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.aboutH3 {
+  color: #F5DA81;
+}
