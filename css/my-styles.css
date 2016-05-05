@@ -8,6 +8,10 @@ body {
 .navbar {
   background-color: #F5DA81;
 }
+.btn {
+  background-color: #bababa;
+}
+
 .aboutColumn {
   background-color: #7EB58C;
   height: 1000px;
@@ -18,7 +22,7 @@ body {
 .contentArea {
   padding-top: 30px;
   padding-left: 0px;
-
+  background-color: #ededed;
 }
 .pageTitle{
   padding-top: 20px;

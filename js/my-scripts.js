@@ -1,3 +1,4 @@
+// append pingpong and integer values in an unordered list below input box inline form.
 var appendText = function(stringsToPrint) {
   // Removing all children from an element
   $("ul#textList").empty();
@@ -33,7 +34,6 @@ var performPingPongTransformation = function(isDivisibleBy3, isDivisibleBy5)  {
   if (isDivisibleBy3) { outputString += "ping"}
   if (isDivisibleBy5) { outputString += "pong"}
   return outputString
-
 }
 
 // define transform function that applies full set of rules for transformation
@@ -71,3 +71,59 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
+
+/*
+FYI:  I originally worked out the algorithm for the pingpong game in a swift playground
+since I'm more comfortatble with the Swift syntax.
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+var str = "Hello, playground"
+
+// Swift PingPong code
+
+var userInput = 33
+// Build an array containing integers from 1 to the user selected value
+var inputArray = Array<Int>()
+
+var counter = 0
+
+while counter < userInput {
+    counter++
+    inputArray.append(counter)
+}
+
+// define tests for divisibility by 3 and 5
+func divisibileBy3 (i: Int) -> Bool
+{
+    return i%3 == 0
+}
+func divisibileBy5 (i: Int) -> Bool
+{
+    return i%5 == 0
+}
+
+// define function to generate "ping when number is %3=0, pong when %5=0, and pinpong when %3=0 && %5=0
+func performPingPongTransformation (isDivisibleBy3: Bool, isDivisibleBy5: Bool, i: Int) -> String {
+    var outputString = ""
+    if isDivisibleBy3 { outputString += "ping"}
+    if isDivisibleBy5 { outputString += "pong"}
+    return outputString
+
+}
+
+// define transform function that applies full set of rules for transformation
+func transformIntToString (inputInteger: Int) -> String {
+
+    let isDivisibleBy3 = divisibileBy3(inputInteger)
+    let isDivisibleBy5 = divisibileBy5(inputInteger)
+
+    if !(isDivisibleBy3 || isDivisibleBy5) { return String(inputInteger)}
+    else {
+        return performPingPongTransformation(isDivisibleBy3, isDivisibleBy5: isDivisibleBy5, i: inputInteger)
+        }
+    }
+
+var outputValuesToPrint = inputArray.map(transformIntToString)
+*/
